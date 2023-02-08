@@ -14,4 +14,4 @@ example: `https://seki-statx-api.vercel.app/TABEL1_1`
 
 ## How it Works
 
-This API request an excel file from the [SEKI Page](https://www.bi.go.id/id/statistik/ekonomi-keuangan/seki/Default.aspx) provided by Bank Indonesia and transforms it using Pandas library. It sends the JSON data as a response. **Currently this API only extract data from 2010**.
+This API request an excel file from the [SEKI Page](https://www.bi.go.id/id/statistik/ekonomi-keuangan/seki/Default.aspx) provided by Bank Indonesia and transforms it using Pandas library. It sends the JSON data as a response. **Currently this API only extract data from 2010-newest**.
