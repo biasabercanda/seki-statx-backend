@@ -8,9 +8,9 @@ This API is built using Flask RESTful and deployed on Vercel.
 
 Call the API and pass the table ID. You can see the table ID in [SEKI Page](https://www.bi.go.id/id/statistik/ekonomi-keuangan/seki/Default.aspx), on the PDF donwload button.
 
-"https://seki-statx-api.vercel.app/<table_id>"
+`https://seki-statx-api.vercel.app/<table_id>`
 
-example: "https://seki-statx-api.vercel.app/TABEL1_1"
+example: `https://seki-statx-api.vercel.app/TABEL1_1`
 
 ## How it Works
 
