@@ -37,7 +37,7 @@ def clean_data(df):
   df1.loc[1] = df1.loc[1].apply(date)
 
   keterangan = df1.loc[0,df1.columns[2]]
-  df1.loc[0]= df1.loc[[0,1],df1.columns[1]:df1.columns[len(df1.columns)-1]].astype(str).apply('/'.join)
+  df1.loc[0]= df1.loc[[0,1],df1.columns[1]:df1.columns[len(df1.columns)-1]].astype(str).apply('-'.join)
   df1.loc[0,df1.columns[2]] = keterangan
 
   d= df1.isna().any()

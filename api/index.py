@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_restful import Resource, Api
+from flask_cors import CORS
 from api.helper_functions import get_data, date, clean_data
 from io import BytesIO
 import pandas as pd
@@ -8,6 +9,7 @@ import xlrd
 
 app = Flask(__name__)
 api = Api(app)
+CORS(app)
 
 class seki(Resource):
     def get(self,table_id):
