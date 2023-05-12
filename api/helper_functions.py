@@ -26,7 +26,7 @@ def clean_data(df):
     df1[['Unnamed: 1','Unnamed: 2']] = df2.fillna(axis=1,method='ffill')
   
   year = 0
-  cek = ['Jan', 'Q1']
+  cek = ['Jan','Jan*' ,'Q1','Q1*']
   for column in df1.columns:
       if year == 0 and isinstance(df1[column][0], int):
           year = df1[column][0]
