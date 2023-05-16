@@ -3,12 +3,11 @@ from io import BytesIO
 import pandas as pd
 import calendar
 import datetime
-import xlrd
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 from flask import send_file
-from io import BytesIO
+
 
 def get_data(tabel):
   url = "https://cors-proxy.sofyanhidayat48.workers.dev/?https://www.bi.go.id/SEKI/tabel/"+tabel+".xls"
