@@ -21,7 +21,7 @@ class seki(Resource):
         return res
 
 class forecast(Resource):
-    def get():
+    def get(self):
         return "tes"
     
     
