@@ -21,7 +21,10 @@ class seki(Resource):
         return res
 
 class forecast(Resource):
-    print("tes")
+    def get():
+        return "tes"
+    
+    
 
 api.add_resource(seki, '/<string:table_id>')
 api.add_resource(forecast,'/forecast')
