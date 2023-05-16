@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_restful import Resource, Api
 from flask_cors import CORS
-from api.helper_functions import get_data, date, clean_data, corelation
+from api.helper_functions import get_data, date, clean_data
 from io import BytesIO
 import pandas as pd
 
