@@ -20,7 +20,11 @@ class seki(Resource):
         res = cleaned_data.to_json(orient ='split')
         return res
 
+class forecast(Resource):
+    print("tes")
+
 api.add_resource(seki, '/<string:table_id>')
+api.add_resource(forecast,'/forecast')
 
 if __name__ == '__main__':
     app.run(debug=True)
