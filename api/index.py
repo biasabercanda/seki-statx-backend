@@ -4,7 +4,7 @@ from flask_cors import CORS
 from api.helper_functions import get_data, date, clean_data
 from io import BytesIO
 import pandas as pd
-
+import xlrd
 
 
 app = Flask(__name__)
