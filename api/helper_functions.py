@@ -10,7 +10,7 @@ import xlrd
 def get_data(tabel):
   url = "https://cors-proxy.sofyanhidayat48.workers.dev/?https://www.bi.go.id/SEKI/tabel/"+tabel+".xls"
   response = requests.get(url).content
-  f = pd.ExcelFile(BytesIO(response))
+  f = xlrd.open_workbook(file_contents=response)
   return f
 
 def date(x):
